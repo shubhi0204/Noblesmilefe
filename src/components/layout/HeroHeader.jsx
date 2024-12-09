@@ -6,8 +6,8 @@ const HeroHeader = () => {
       <div className="w-[80%] h-full m-auto flex justify-center items-center relative">
         {/* Bg text */}
         <span className="w-full flex justify-between text-[8rem] font-normal text-stone-900 tracking-wide text-justify mt-[-3.2rem]">
-          <span>OUR</span>
-          <span>ADVANTAGES</span>
+          <span>NOBLE</span>
+          <span>SMILE</span>
         </span>
 
         {/* Photo album */}

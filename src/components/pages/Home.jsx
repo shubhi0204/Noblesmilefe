@@ -5,6 +5,7 @@ import Services from "../sections/Home/Services";
 import ContactLayout from "../layout/ContactLayout";
 import Footer from "../sections/Home/Footer";
 import Recognitions from "../sections/Home/Recognitions";
+import AboutDoctor from "../sections/Home/AboutDoctor";
 
 const Home = () => {
   const [isScrolledPastHero, setIsScrolledPastHero] = useState(false);
@@ -41,7 +42,10 @@ const Home = () => {
       <div ref={heroRef}>
         <HeroHeader />
       </div>
-      <Recognitions />
+      <div className="mt-[8rem] flex flex-col gap-[9.2rem]">
+        <AboutDoctor />
+        <Recognitions />
+      </div>
       <Services />
       <ContactLayout />
       <Footer />

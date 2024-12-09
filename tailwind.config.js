@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -10,6 +9,14 @@ export default {
       spacing: {
         "wide-word": "1em",
       },
+      rotate: {
+        'y-180': '180deg',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      transform: ['hover'],
     },
   },
   plugins: [],

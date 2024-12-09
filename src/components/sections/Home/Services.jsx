@@ -1,6 +1,61 @@
 import React from "react";
 
+import ServicesCard from "../../ui/ServicesCard";
+
 const Services = () => {
+  /* 
+    Meta data
+  */
+  const servicesMetaData = [
+    {
+      title: "Tooth Extraction",
+      description:
+        "Safe removal of teeth with minimal discomfort, tailored for your oral health needs.",
+    },
+    {
+      title: "Dental Implant",
+      description:
+        "Durable and natural-looking teeth replacement with advanced pain-free techniques.",
+    },
+    {
+      title: "Root Canal",
+      description:
+        "Quick and efficient treatment to save infected teeth in just one session.",
+    },
+    {
+      title: "Teeth Whitening",
+      description:
+        "Professional whitening solutions to brighten your smile effectively and safely.",
+    },
+    {
+      title: "Dental Bleaching",
+      description:
+        "Restore the natural whiteness of your teeth with our gentle bleaching procedures.",
+    },
+    {
+      title: "Veneers",
+      description:
+        "Achieve a flawless smile with custom veneers and expert aesthetic design.",
+    },
+    {
+      title: "Braces",
+      description:
+        "Straighten teeth with traditional braces or invisible aligners for a perfect smile.",
+    },
+    {
+      title: "Pediatric Dentistry",
+      description:
+        "Gentle and specialized dental care tailored to ensure healthy smiles for children.",
+    },
+    {
+      title: "More..",
+      description: "Explore more dental services to meet your specific needs.",
+    },
+  ];
+
+  /* 
+    JSX
+  */
   return (
     <div className="w-full h-[100dvh]">
       <div className="w-[80%] h-full flex justify-between items-center m-auto">
@@ -27,7 +82,7 @@ const Services = () => {
           </div>
 
           <span
-            className="w-full text-[4rem] font-normal text-stone-900 tracking-wide"
+            className="w-full text-[4rem] font-normal text-stone-900 tracking-wide mt-[-1rem]"
             style={{ wordSpacing: "0.20em" }}
           >
             <span className="text-stone-500">EXPLORE OUR SERVICES, </span>
@@ -54,21 +109,8 @@ const Services = () => {
         <div className="w-[50%] h-full flex justify-between items-center space-x-6 overflow-y-clip">
           {/* Container-1 */}
           <div className="w-full flex-shrink-0 flex gap-4 flex-wrap justify-between">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
-              <div
-                className="relative w-[30%] h-[12rem] flex-shrink-0"
-                key={index}
-              >
-                <img
-                  src={`/drawables/services--${2}.jpg`}
-                  alt="service_image"
-                  className="h-full w-full rounded-4xl bg-center bg-cover object-center object-cover rounded-3xl"
-                />
-
-                <span className="w-[80%] bg-[#ffffffc9] rounded-full flex justify-center items-center px-2 py-2 absolute left-[50%] translate-x-[-50%] bottom-3 mx-auto">
-                  Root canal
-                </span>
-              </div>
+            {servicesMetaData?.map((item, index) => (
+              <ServicesCard key={index} data={item} />
             ))}
           </div>
         </div>
