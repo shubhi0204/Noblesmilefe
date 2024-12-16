@@ -38,7 +38,7 @@ const ContactSidebar = ({ onTabChange }) => {
           </span>
 
           <span
-            className={`text-2xl md:text-3xl underline-offset-[0.8rem] hover:text-oink-700 transition-all duration-300 ease-linear ${currentSelection === "Enquiry" ? "underline" : ""}`}
+            className={`w-full text-2xl md:text-3xl underline-offset-[0.8rem] hover:text-pink-700 transition-all duration-300 ease-linear pl-8 ${currentSelection === "Enquiry" ? "underline" : ""}`}
             onClick={() => handleTabClick("Enquiry")}
             onMouseEnter={() => setHoverItem("Enquiry")}
             onMouseLeave={() => setHoverItem(null)}

@@ -3,9 +3,9 @@ import React from "react";
 const Recognitions = () => {
   return (
     <div className="w-full">
-      <div className="w-[90%] flex justify-between items-stretch space-x-6">
+      <div className="w-[92%] md:w-[90%] flex nd:flex-row flex-col justify-between items-stretch space-x-6">
         {/* Frame */}
-        <div className="w-[64%] h-[72vh] border-[24px] border-stone-800 shadow-2xl bg-white box-content rounded-lg">
+        <div className="w-[86%] h-[40vh] md:w-[64%] md:h-[72vh] border-[24px] border-stone-800 shadow-2xl bg-white box-content rounded-lg ml-4">
           <img
             src="/drawables/certificate-1.jpg"
             alt="certificate-1_img"
@@ -14,7 +14,7 @@ const Recognitions = () => {
         </div>
 
         {/* Details */}
-        <div className="w-[26%] flex flex-col gap-5">
+        <div className="md:w-[26%] flex flex-col gap-5">
           <span className="text-stone-800 text-[6.4rem]">B.D.S</span>
 
           <div className="flex justify-start items-baseline space-x-3 mt-[-1.2rem]">

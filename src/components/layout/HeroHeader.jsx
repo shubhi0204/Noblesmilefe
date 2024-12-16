@@ -3,15 +3,15 @@ import React from "react";
 const HeroHeader = () => {
   return (
     <div className="w-full h-[88dvh] mt-[12dvh]">
-      <div className="w-[80%] h-full m-auto flex justify-center items-center relative">
+      <div className="w-[88%] md:w-[80%] h-full m-auto flex justify-center items-center relative">
         {/* Bg text */}
-        <span className="w-full flex justify-between text-[8rem] font-normal text-stone-900 tracking-wide text-justify mt-[-3.2rem]">
-          <span>NOBLE</span>
-          <span>SMILE</span>
+        <span className="w-full hidden md:flex md:flex-row flex-col justify-between text-[4rem] md:text-[8rem] font-normal text-stone-900 tracking-wide text-justify mt-[-20rem] md:mt-[-3.2rem]">
+          <span className="self-start">NOBLE</span>
+          <span className="self-end">SMILE</span>
         </span>
 
         {/* Photo album */}
-        <div className="w-[40%] h-[80%] absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div className="w-[64%] md:w-[40%] h-[48%] md:h-[80%] absolute left-[50%] top-[44%] md:top-[50%] translate-x-[-50%] translate-y-[-50%]">
           {/* Wrapper */}
           <div className="h-full w-full relative">
             <img

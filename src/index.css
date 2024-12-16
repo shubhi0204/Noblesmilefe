@@ -17,3 +17,21 @@
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fade-in-bounce {
+  animation: fadeInBounce 2s ease-in-out infinite;
+}

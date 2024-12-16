@@ -6,6 +6,7 @@ import ContactLayout from "../layout/ContactLayout";
 import Footer from "../sections/Home/Footer";
 import Recognitions from "../sections/Home/Recognitions";
 import AboutDoctor from "../sections/Home/AboutDoctor";
+import Blogs from "../sections/Home/Blogs";
 
 const Home = () => {
   const [isScrolledPastHero, setIsScrolledPastHero] = useState(false);
@@ -35,19 +36,26 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-[9rem] bg-white w-full relative">
+    <div className="flex flex-col gap-[4rem] md:gap-[9rem] bg-white w-full relative">
       <div className="w-full fixed z-[999] bg-white">
         <Navbar isScrolled={isScrolledPastHero} />
       </div>
-      <div ref={heroRef}>
+      <div ref={heroRef} id="home">
         <HeroHeader />
       </div>
-      <div className="mt-[8rem] flex flex-col gap-[9.2rem]">
+      <div className="mt-[8rem] flex flex-col gap-[9.2rem]" id="about">
         <AboutDoctor />
         <Recognitions />
       </div>
-      <Services />
-      <ContactLayout />
+      <div id="services">
+        <Services />
+      </div>
+      <div id="contact">
+        <ContactLayout />
+      </div>
+      <div id="blogs">
+        <Blogs />
+      </div>
       <Footer />
     </div>
   );

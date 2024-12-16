@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-full py-20 bg-stone-900">
-      <div className="w-[80%] m-auto flex justify-between items-start gap-4">
+      <div className="w-[80%] m-auto flex md:flex-row flex-col justify-between items-start gap-16 md:gap-4">
         {/* Logo and copyright detials */}
-        <div className="w-[48%] flex flex-col">
+        <div className="w-full md:w-[48%] flex flex-col">
           <img
             src="/drawables/logo_bg-less.png"
             alt="logo_without_bg"
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         {/* Important links */}
-        <div className="w-[16%] flex flex-col gap-5">
+        <div className="w-full md:w-[16%] flex flex-col gap-5">
           <span className="text-pink-600 font-semibold text-3xl">Pages</span>
           <div className="flex flex-col gap-3 text-stone-200">
             <button className="w-fit">Services</button>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         {/* Contact info */}
-        <div className="w-[40%] flex flex-col items-start gap-5">
+        <div className="w-full md:w-[40%] flex flex-col items-start gap-5">
           <span className="text-pink-600 font-semibold text-3xl">Find us</span>
           <div className="flex flex-col gap-3 text-stone-200">
             <span className="w-fit text-stone-300">
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         {/* Social links */}
-        <div className="w-[20%] flex flex-col gap-5">
+        <div className="w-full md:w-[20%] flex flex-col gap-5">
           <span className="text-pink-600 font-semibold text-3xl">Socials</span>
           <div className="flex flex-col gap-3 text-stone-200">
             <a className="w-fit" href="#">

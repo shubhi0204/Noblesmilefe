@@ -7,14 +7,14 @@ const ContactLayout = () => {
   const [currentTab, setCurrentTab] = useState("Enquiry");
 
   return (
-    <div className="w-[80%] flex flex-col justify-center items-center m-auto my-[2rem] gap-12">
+    <div className="w-[88%] md:w-[80%] flex flex-col justify-center items-center m-auto my-[2rem] gap-12">
       {currentTab === "Enquiry" ? (
-        <div className="w-fit flex justify-between items-center space-x-3 text-stone-700 font-semibold text-5xl">
+        <div className="w-fit flex justify-between items-center space-x-3 text-stone-700 font-semibold text-4xl md:text-5xl">
           <span>Ask</span>
           <span className="text-pink-700">Query.</span>
         </div>
       ) : (
-        <div className="w-fit flex justify-between items-center space-x-3 text-stone-700 font-semibold text-5xl">
+        <div className="w-fit flex justify-between items-center space-x-3 text-stone-700 font-semibold text-4xl md:text-5xl">
           <span>New</span>
           <span className="text-pink-700">Appointment.</span>
         </div>
